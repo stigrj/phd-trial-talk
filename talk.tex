@@ -465,7 +465,7 @@
 \begin{frame}
     \frametitle{Relativistic free particle}
     \begin{columns}
-    \begin{column}{.40\textwidth}
+    \begin{column}{.5\textwidth}
 	\centering
 	\textbf{Free particle energy}
         \begin{equation}
@@ -485,7 +485,7 @@
 		    barrier creates \textbf{electron-positron pair}
 	\end{itemize}
     \end{column}
-    \begin{column}{.60\textwidth}
+    \begin{column}{.5\textwidth}
 	\centering
 	\only<1>{\ \ \ \includegraphics[viewport = 100 420 520 750, clip, scale=0.3]{figures/electron_positron_1.pdf}}
 	\only<2>{\ \includegraphics[viewport = 100 420 520 750, clip, scale=0.3]{figures/electron_positron_2.pdf}}
@@ -497,31 +497,31 @@
 \begin{frame}
     \frametitle{Approximate Hamiltonians}
     \begin{columns}
-    \begin{column}{.75\textwidth}
-    \textbf{The full four-component Dirac Hamiltonian can be approximated in several ways}\\
-    \ \\
+    \begin{column}{.90\textwidth}
     \begin{itemize}
-	\item	it can be decoupled by a unitary transformation into two-component form
-		\begin{equation}
-		    \nonumber
-		    U^\dag h^RU = \begin{bmatrix}h_+&0\\0&h_-\\ \end{bmatrix}
-		\end{equation}
+	\item	The \textbf{non-relativistic limit} of the full four-component Dirac Hamiltonian
+		(Levy-Leblond) is equivalent to the Schr\"{o}dinger Hamiltonian\\
 		\ \\
 		\ \\
-	\item	or we can start from a \textbf{non-relativistic} wave function and treat relativistic\\
+		\ \\
+	\item	We can start from a \textbf{non-relativistic} wave function and treat relativistic\\
 		effects as a \textbf{perturbation}, in which case we get the Pauli Hamiltonian
 		\begin{equation}
 		    \nonumber
-		    H^{pauli} = h^{NR} + h^{mv} + h^{darwin} + h^{so} + \cdots
+		    h^{pauli} = h^{NR} + h^{mv} + h^{darwin} + h^{so} + \cdots
 		\end{equation}
 		\ \\
 		\ \\
-	\item	where the corrections are separated into \textbf{scalar relativistic effects}
+		\ \\
+		\ \\
+	\item	The corrections are separated into \textbf{scalar relativistic effects}
 		\begin{equation}
 		    \nonumber
 		    h^{mv} = -\frac{p^4}{8m^3c^2}, \qquad\qquad\qquad
 		    h^{darwin} = \frac{1}{8m^2c^2} \nabla^2V
 		\end{equation}
+		\ \\
+		\ \\
 		\ \\
 		\ \\
 	\item	and \textbf{spin-orbit effects}
@@ -532,7 +532,7 @@
 		\end{equation}
     \end{itemize}
     \end{column}
-    \begin{column}{.25\textwidth}
+    \begin{column}{.10\textwidth}
 	\ \\
     \end{column}
     \end{columns}
@@ -540,14 +540,21 @@
 
 \begin{frame}
     \frametitle{Scalar relativistic effects}
+    \begin{columns}
+    \begin{column}{0.45\textwidth}
+    \centering
+    \textbf{The Mass-Velocity correction}
+		\begin{equation}
+		    \nonumber
+		    h^{mv} = -\frac{p^4}{8m^3c^2}
+		\end{equation}
     \begin{itemize}
-	\item	Electron speed related to nuclear charge $Z$
-		and principal quantum number $n$
+	\item	Electron speed related to nuclear charge\\
+		$Z$ and principal quantum number $n$
 		\begin{equation}
 		    \nonumber
 		    \frac{v_e}{c} \approx \frac{Z}{n\alpha},\qquad \alpha \approx 137
 		\end{equation}
-		\ \\
 		\ \\
 		\ \\
 	\item	giving an \textbf{increase} in electron mass
@@ -557,7 +564,6 @@
 		\end{equation}
 		\ \\
 		\ \\
-		\ \\
 	\item	\textbf{contraction} of the Bohr radius
 		\begin{equation}
 		    \nonumber
@@ -565,18 +571,25 @@
 		\end{equation}
 		\ \\
 		\ \\
-		\ \\
-	\item	and the \textbf{mass-velocity} energy correction
-		\begin{equation}
-		    \nonumber
-		    h^{mv} = -\frac{p^4}{8m^3c^2}
-		\end{equation}
-		\ \\
-		\ \\
-		\ \\
-	\item	Relativity leads to \textbf{orbital contraction} and a \textbf{lowering} of the energy, 
-		and the effect\\ is greater with higher nuclear charge and lower principal quantum number
     \end{itemize}
+    \ \\
+    \ \\
+    \pause
+    \textbf{Relativistic effects}
+    \begin{itemize}
+	\item   increases as $Z^2$ for valence electrons
+	\item   \textbf{contraction} of s- and p-shells
+	\item   \textbf{indirect expansion} of d- and f-shells
+	\item   often explain the differences between\\ 
+	        the 5th and 6th row elements
+    \end{itemize}
+    \end{column}
+    \begin{column}{0.55\textwidth}
+	\centering
+	\includegraphics[viewport = 0 500 550 800, clip, scale=0.35]{figures/periodic_table.pdf}\\
+	\includegraphics[viewport = 0 520 520 800, clip, scale=0.35]{figures/orbital_energies.pdf}
+    \end{column}
+    \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -585,7 +598,7 @@
     \begin{columns}
     \begin{column}{.50\textwidth}
     \centering
-    \textbf{The Darwin energy correction}
+    \textbf{The Darwin correction}
     \begin{equation}
 	\nonumber
 	h^{darwin} = \frac{1}{8m^2c^2} \nabla^2 V
@@ -618,19 +631,18 @@
 \begin{frame}
     \frametitle{Spin-orbit effects}
     \begin{columns}
-    \begin{column}{.10\textwidth}
-	\ \\
-    \end{column}
-    \begin{column}{.40\textwidth}
+    \begin{column}{.70\textwidth}
+    \begin{columns}
+    \begin{column}{.28\textwidth}
 	\centering
-    \textbf{General expression}
-    \begin{equation}
-	\nonumber
-	h^{so} = \frac{1}{4m^2c^2}\boldsymbol{\sigma}\cdot
-	    \left[\left(\nabla V\right)\times\boldsymbol{p}\right]
-    \end{equation}
+	\textbf{Spin-orbit correction}
+	\begin{equation}
+	    \nonumber
+	    h^{so} = \frac{1}{4m^2c^2}\boldsymbol{\sigma}\cdot
+		\left[\left(\nabla V\right)\times\boldsymbol{p}\right]
+	\end{equation}
     \end{column}
-    \begin{column}{.40\textwidth}
+    \begin{column}{.42\textwidth}
 	\centering
 	\textbf{Spherical potential ($V=Z/r$)}
 	\begin{equation}
@@ -638,31 +650,36 @@
 	    h^{so} = \frac{Z}{c^2}\frac{\boldsymbol{s}\cdot\boldsymbol{l}}{r^3}
 	\end{equation}
     \end{column}
-    \begin{column}{.10\textwidth}
-	\ \\
-    \end{column}
     \end{columns}
     \ \\
     \ \\
-    \ \\
-    \ \\
-    \begin{columns}
-    \begin{column}{.40\textwidth}
     \begin{itemize}
-	\item	a particle \textbf{moving} in an electric field will see a \textbf{magnetic field}\\
-		\ \\
-	\item	this is a \textbf{relativistic effect}, an element of a Lorentz transformation\\
-		\ \\
-	\item	SO is a \textbf{magnetic interaction} between the electron magnetic moment\\ 
-		(spin) and the magnetic field due to the relative motion of the charges\\
-		\ \\
-	\item	allows \textbf{spin forbidden transitions} (phosphorescence)\\
-		\ \\
+	\item	a particle \textbf{moving} in an electric field will see a \textbf{magnetic field}
+	\item	SO is a \textbf{magnetic interaction} between the electron magnetic moment
+		(spin) and the magnetic field due to the relative motion of the charges
 	\item	responsible for the \textbf{fine structure splitting} of atomic spectral lines
+	\item	allows \textbf{spin forbidden transitions}
     \end{itemize}
+    \ \\
+    \ \\
+    \ \\
+    \pause
+    \ \ \ \ \textbf{The color of the aurora}
+    \begin{itemize}
+	\item	electronic transitions in atomic oxygen
+        \item   spin allowed transition for the dominant green color ($558$ nm)
+        \item   spin forbidden transition ($^1$D $\rightarrow ^3$P) in the red part of the\\ 
+		spectrum ($630$ nm)
+        \item   becomes allowed by \textbf{spin-orbit coupling} but with very long\\
+		lifetime (110 s) and is thus observed only at high altitudes\\
+		(lower density and less thermal de-excitation)
+	\item	green aurora ''moves'' fast while red moves slowly
+	\end{itemize}
     \end{column}
-    \begin{column}{.40\textwidth}
-	\includegraphics[viewport = 230 230 380 400, clip, scale=0.8]{figures/phosphorescence.pdf}
+    \begin{column}{.30\textwidth}
+	\includegraphics[viewport = 0 0 600 800, clip, scale=0.12, angle = -90]{figures/aurora.pdf}\\
+	\includegraphics[viewport = 40 400 600 800, clip, scale=0.19]{figures/aurora_2.pdf}\\
+	\includegraphics[viewport = 80 540 430 800, clip, scale=0.27]{figures/aurora_spectrum.pdf}
     \end{column}
     \end{columns}
 \end{frame}
@@ -737,32 +754,32 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}
-    \frametitle{The periodic table}
-    \begin{columns}
-    \begin{column}{.45\textwidth}
-	\textbf{Scalar relativistic effects}
-	\ \\
-	\ \\
-	\begin{itemize}
-	    \item   increases as $Z^2$ for valence electrons
-	    \item   \textbf{contraction} of s- and p-shells
-	    \item   \textbf{indirect expansion} of d- and f-shells
-	    \item   often explain the differences between\\ 
-		    the 5th and 6th row elements
-	    \item   \textbf{lanthanide contraction} ($Z=58\rightarrow71$)
-	    \item   \textbf{theoretical} periodic table available\\
-		    up to element ($Z=172$)\\
-		    \scriptsize{\it{Phys. Chem. Chem. Phys.}, 2011, \textbf{13}, 161}
-	\end{itemize}
-    \end{column}
-    \begin{column}{.55\textwidth}
-	\centering
-	\includegraphics[viewport = 0 500 550 800, clip, scale=0.3]{figures/periodic_table.pdf}\\
-	\includegraphics[viewport = 0 520 520 800, clip, scale=0.3]{figures/orbital_energies.pdf}
-    \end{column}
-    \end{columns}
-\end{frame}
+%\begin{frame}
+    %\frametitle{The periodic table}
+    %\begin{columns}
+    %\begin{column}{.45\textwidth}
+	%\textbf{Scalar relativistic effects}
+	%\ \\
+	%\ \\
+	%\begin{itemize}
+	    %\item   increases as $Z^2$ for valence electrons
+	    %\item   \textbf{contraction} of s- and p-shells
+	    %\item   \textbf{indirect expansion} of d- and f-shells
+	    %\item   often explain the differences between\\ 
+		    %the 5th and 6th row elements
+	    %\item   \textbf{lanthanide contraction} ($Z=58\rightarrow71$)
+	    %\item   \textbf{theoretical} periodic table available\\
+		    %up to element ($Z=172$)\\
+		    %\scriptsize{\it{Phys. Chem. Chem. Phys.}, 2011, \textbf{13}, 161}
+	%\end{itemize}
+    %\end{column}
+    %\begin{column}{.55\textwidth}
+	%\centering
+	%\includegraphics[viewport = 0 500 550 800, clip, scale=0.3]{figures/periodic_table.pdf}\\
+	%\includegraphics[viewport = 0 520 520 800, clip, scale=0.3]{figures/orbital_energies.pdf}
+    %\end{column}
+    %\end{columns}
+%\end{frame}
 
 \begin{frame}
     \frametitle{The gold atom}
@@ -854,36 +871,56 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Polar lights}
-    \begin{columns}
-    \begin{column}{.60\textwidth}
-	\textbf{The color of the aurora}
-	\begin{itemize}
-	    \item   spin allowed transition for the dominant green color ($558$ nm)
-	    \item   spin forbidden transition ($^1$D $\rightarrow ^3$P) in the red part\\ 
-		    of the spectrum ($630$ nm)
-	    \item   becomes allowed by spin-orbit coupling but with very long\\
-		    lifetime (110 s) and is thus observed only at high altitudes\\
-		    (lower density and less thermal de-excitation)
-	    \item   green aurora will ''move'' fast while red moves slowly
-	\end{itemize}
-	\ \\
-	\ \\
-	\ \\
-	\centering
-	\includegraphics[viewport = 80 540 430 800, clip, scale=0.4]{figures/aurora_spectrum.pdf}
-    \end{column}
-    \begin{column}{.40\textwidth}
-	\centering
-	\includegraphics[viewport = 0 0 600 800, clip, scale=0.15, angle = -90]{figures/aurora.pdf}\\
-	\includegraphics[viewport = 40 400 600 800, clip, scale=0.24]{figures/aurora_2.pdf}
-    \end{column}
-    \end{columns}
-\end{frame}
+%\begin{frame}
+    %\frametitle{Polar lights}
+    %\begin{columns}
+    %\begin{column}{.60\textwidth}
+	%\textbf{The color of the aurora}
+	%\begin{itemize}
+	    %\item   spin allowed transition for the dominant green color ($558$ nm)
+	    %\item   spin forbidden transition ($^1$D $\rightarrow ^3$P) in the red part\\ 
+		    %of the spectrum ($630$ nm)
+	    %\item   becomes allowed by \textbf{spin-orbit coupling} but with very long\\
+		    %lifetime (110 s) and is thus observed only at high altitudes\\
+		    %(lower density and less thermal de-excitation)
+	%\end{itemize}
+	%\ \\
+	%\ \\
+	%\ \\
+	%\centering
+	%\includegraphics[viewport = 80 540 430 800, clip, scale=0.4]{figures/aurora_spectrum.pdf}
+    %\end{column}
+    %\begin{column}{.40\textwidth}
+	%\centering
+	%\includegraphics[viewport = 0 0 600 800, clip, scale=0.15, angle = -90]{figures/aurora.pdf}\\
+	%\includegraphics[viewport = 40 400 600 800, clip, scale=0.24]{figures/aurora_2.pdf}
+    %\end{column}
+    %\end{columns}
+%\end{frame}
 
 \begin{frame}
     \frametitle{Summary}
+    \textbf{Relativistic effects in chemistry}\\
+    \ \\
+    \ \\
+    \begin{itemize}
+	\item	The theories of special relativity and quantum mechanics are merged
+		in the \textbf{Dirac equation}\\
+		\ \\
+	\item	Relativistic effects can today be \textbf{routinely included} in quantum chemical 
+		calculations\\
+		\ \\
+	\item	The full four-component Dirac equation is \textbf{more expensive} to solve 
+		than the corresponding\\
+		non-relativistic Schr\"{o}dinger equation\\
+		\ \\
+	\item	For lighter atoms relativistic effects can be treated as perturbations\\
+		\ \\
+	\item	Relativistic effects can have a \textbf{large impact on chemical properties}\\
+		\ \\
+	\item	Relativistic effects \textbf{cannot be neglected for heavy elements} or for very 
+		accurate calculations
+    \end{itemize}
 \end{frame}
 
 
